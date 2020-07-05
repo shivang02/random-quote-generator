@@ -41,7 +41,7 @@ class App extends Component {
   }
 
   TweetCode =() => {
-    document.getElementById("twitter-link").href =`https://twitter.com/intent/tweet?text=${encodeURIComponent('"' + this.state.quote.text + '" ' + this.state.quote.author)}`;
+    document.getElementById("tweet-quote").href =`https://twitter.com/intent/tweet?text=${encodeURIComponent('"' + this.state.quote.text + '" ' + this.state.quote.author)}`;
   }
 
   render () {
